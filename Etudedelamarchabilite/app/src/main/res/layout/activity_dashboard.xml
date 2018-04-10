@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context="com.sorbonne.isir.etudedelamarchabilite.Dashboard"
+android:background="@drawable/skybg"
+android:weightSum="1">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/bienvenue"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="right"
+            android:background="@drawable/logout"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            />
+
+
+    </LinearLayout>
+    <Switch
+        android:id="@+id/switch_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:theme="@style/ToggleSwitchTheme"
+        android:backgroundTint="#00F"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:text="Activer le GPS :     "
+
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <ImageButton
+        android:id="@+id/photo"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:background="@drawable/camera"
+        android:layout_weight="1"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        />
+
+    <ImageButton
+        android:id="@+id/video"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_weight="1"
+        android:background="@drawable/video" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="70dp"
+    >
+    <ImageButton
+        android:id="@+id/voix"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:background="@drawable/voice"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        />
+    <ImageButton
+        android:id="@+id/texte"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:background="@drawable/texte"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        />
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="bottom"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/letter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>
+
+</TableLayout>

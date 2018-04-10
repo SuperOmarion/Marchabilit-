@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skybg"
+    tools:context="com.sorbonne.isir.etudedelamarchabilite.UploadPicture">
+
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ccom.sorbonne.isir.etudedelamarchabilite.UploadPicture">
+
+        <ImageView
+            android:id="@+id/imageV"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:width="180dp"
+            android:background="#000"
+            android:scaleType="fitXY" />
+        <Button
+            android:id="@+id/capture"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="capture"
+            android:textSize="16dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"/>
+
+
+        <EditText android:id="@+id/Piccomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Description"/>
+        >
+
+        <Button
+            android:id="@+id/envoiPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="envoyer"
+            android:textSize="16dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorAccent"/>
+    </TableLayout>
+
+</ScrollView>

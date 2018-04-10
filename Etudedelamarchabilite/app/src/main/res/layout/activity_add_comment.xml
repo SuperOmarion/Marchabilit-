@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skybg"
+        tools:context="com.sorbonne.isir.etudedelamarchabilite.AddComment"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.upmc.superomarion.etumarche.AddComment">
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Objet"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop" />
+            <Spinner
+                android:id="@+id/objets"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000"
+                android:textAlignment="center"
+                android:spinnerMode="dropdown"
+                android:scaleY="1.8"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp" />
+
+            <EditText android:id="@+id/autres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage"
+                android:visibility="invisible"
+                android:hint="Votre objet"/>
+
+
+            <EditText android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Commentaire"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:id="@+id/envoie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="envoyer"
+                android:textSize="16dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:backgroundTint="@color/colorAccent"/>
+        </TableLayout>
+
+    </ScrollView>
+
+
+
